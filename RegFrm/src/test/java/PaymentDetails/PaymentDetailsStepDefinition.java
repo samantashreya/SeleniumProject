@@ -133,8 +133,8 @@ public class PaymentDetailsStepDefinition {
 	 @Then("^displays 'Conference Room Booking successfully done!!!'$")
 	 public void Registration_Done_Successfully() throws Throwable {
 		 Thread.sleep(2000);
-		 driver.close();
-		 }
+		 driver.quit();
+	 }
 
 }
 
