@@ -18,7 +18,7 @@ public class TestingStepDef {
 	@Before
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Backup\\chromedriver_win32\\chromedriver.exe" );
+				"C:\\Users\\shrsaman\\git\\SeleniumProject\\BDDCaseStudyFinal\\chromedriver.exe" );
 		
 		driver= new ChromeDriver();
 	}
@@ -46,7 +46,7 @@ public class TestingStepDef {
 	@Then("^displays hotelBooking page$")
 	public void displays_hotelBooking_page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		driver.navigate().to("D:\\Backup\\hotelBooking\\hotelbooking.html");
+		driver.navigate().to("C:\\Users\\shrsaman\\git\\SeleniumProject\\BDDCaseStudyFinal\\hotelbooking.html");
 	}
 
 	@Then("^displays 'Invalid username password '$")
