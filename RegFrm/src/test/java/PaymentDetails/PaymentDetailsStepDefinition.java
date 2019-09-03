@@ -19,12 +19,12 @@ public class PaymentDetailsStepDefinition {
 	@Before
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver",
-				"d:\\chromedriver.exe" );	
+				"C:\\Users\\shrsaman\\git\\SeleniumProject\\RegFrm\\BDDEssentials\\chromedriver.exe" );	
 				driver= new ChromeDriver();
 	}
 	 @Given("^user is on 'Payment Detail' page$")
 	 public void user_is_on_Payment_page() throws Throwable {
-	 driver.get("C:\\Users\\home\\Desktop\\SetAHTML\\PaymentDetails.html");
+	 driver.get("C:\\Users\\shrsaman\\git\\SeleniumProject\\RegFrm\\BDDEssentials\\PaymentDetails.html");
 	 details = new PaymentDetails(driver);
 	 }
 	 
@@ -133,8 +133,8 @@ public class PaymentDetailsStepDefinition {
 	 @Then("^displays 'Conference Room Booking successfully done!!!'$")
 	 public void Registration_Done_Successfully() throws Throwable {
 		 Thread.sleep(2000);
-		 driver.quit();
-	 }
+		 driver.close();
+		 }
 
 }
 
