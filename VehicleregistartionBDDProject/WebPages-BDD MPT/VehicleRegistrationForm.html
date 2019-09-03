@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Welcome to VehicleRegistration</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample vehicle registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample vehicle registration form. " />
+<link rel='stylesheet' href='VehicleRegistartionForm.css' type='text/css' />
+<script src="VehicleRegistrationFormValidation.js"></script>
+</head>
+
+<style type="text/css"> 
+#Format
+{
+	font-family:Calibri;
+}
+
+#Format1
+{
+	font-family:Calibri;
+}
+</style>
+<!-- <body onLoad="document.registration.vehicleid.focus();"> -->
+<body>
+<h1>Vehicle Registration Form</h1>
+<p>You can Use the tab key to move from one input field to the next.</p>
+<form name='registration' onSubmit="return formValidation();">
+
+<ul>
+
+<li><label for="title">Title:</label></li>
+<li><select name="title">
+<option selected="" value="Default">Please select</option>
+<option value="Mr">Mr.</option>
+<option value="Mrs">Mrs.</option>
+<option value="Ms">Ms.</option>
+</select></li>
+
+<li><label for="ownername">Owner name:</label></li>
+<li><input type="text" id="ownername" name="ownername" size="25" /></li>
+
+<li><label id="gender">Gender:</label></li>
+<li><input type="radio" name="gender" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="gender" value="Female" /><span>Female</span></li>
+
+<li><label for="address">Address:</label></li>
+<li><input type="text" class="Format1" id="address" name="address" size="50" /></li>
+
+<li><label for="city">City:</label></li>
+<li><input type="text" class="Format1" id="city" name="city" size="25" /></li>
+
+<li><label for="state">State:</label></li>
+<li><input type="text" class="Format1" id="state" name="state" size="25" /></li>
+
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">Please select a country</option>
+<option value="IND">India</option>
+<option value="SL">SriLanka</option>
+<option value="AUS">Australia</option>
+<option value="SA">South Africa</option>
+<option value="BAN">Bangladesh</option>
+</select></li>
+
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" id="zip"/></li>
+
+<li><label id="vehicletype">Vehicle type:</label></li>
+<li><input type="radio" name="vehicletype" value="4wheeler" /><span>4wheeler</span></li>
+<li><input type="radio" name="vehicletype" value="2wheeler" /><span>2wheeler</span></li>
+
+<li><label id="fueltype">Fuel Type:</label></li>
+<li><input type="radio" name="fueltype" value="petrol" /><span>Petrol</span></li>
+<li><input type="radio" name="fueltype" value="diesel" /><span>Diesel</span></li>
+
+<li><label for="mfg">Year of Mfg:</label></li>
+<li><select name="mfg">
+<option selected="" value="Default">Please select a year</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select></li>
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>

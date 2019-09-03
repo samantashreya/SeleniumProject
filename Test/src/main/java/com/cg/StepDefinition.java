@@ -22,7 +22,7 @@ public class StepDefinition {
 
 	@Given("^navigating to website$")
 	public void navigateBrowser() {
-		pg1.openUrl("Reg.html");
+		pg1.openUrl("RegistrationForm.html");
 		pg1.initializeElements();
 	}
 
